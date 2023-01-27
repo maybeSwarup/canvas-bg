@@ -1,5 +1,5 @@
 import * as THREE from 'three'
-import { sphereMaterial } from '../objects/sphere'
+import { sphereMaterial } from '../objects/shapes/sphere'
 import { fpsGraph } from './gui'
 import { controls } from './orbit-control'
 import camera from './camera'
