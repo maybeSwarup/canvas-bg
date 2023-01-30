@@ -8,7 +8,7 @@ import TWEEN from '@tweenjs/tween.js'
 
 const clock = new THREE.Clock()
 
-const loop = () => {
+const animate = () => {
   const elapsedTime = clock.getElapsedTime()
 
   sphereMaterial.uniforms.uTime.value = elapsedTime
@@ -20,7 +20,7 @@ const loop = () => {
   TWEEN.update()
 
   fpsGraph.end()
-  requestAnimationFrame(loop)
+  requestAnimationFrame(animate)
 }
 
-export default loop
+export default animate

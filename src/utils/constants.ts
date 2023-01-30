@@ -1,1 +1,1 @@
-export const numberOfParticles = 500
+export const numberOfParticles = 2000

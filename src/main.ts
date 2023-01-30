@@ -11,7 +11,7 @@ import { ambientLight, hemisphereLight } from './core/lights'
 import pyramid from './objects/shapes/pyramid'
 
 //animation
-import loop from './core/animate'
+import animate from './core/animate'
 import particles from './objects/particles'
 import camera from './core/camera'
 import targets from './objects/particles/targets'
@@ -26,15 +26,8 @@ scene.add(hemisphereLight)
 scene.add(torus)
 particles.forEach(particle => scene.add(particle))
 
+// particle transformations
+transform('torus', particles, 2000)
 
 // play animation
-loop()
-
-// make sphere
-transform('torus', particles, 2000)
-// const timeoutId = setTimeout(() => transform(particles, targets.sphere, 2000), 2000)
-// clearTimeout(timeoutId)
-
-export function render(){
-    renderer.renderer.render(scene, camera)
-}
+animate()

@@ -3,7 +3,8 @@ import target from './targets'
 
 export default function transform (shape: string, particles: any[], duration: number | undefined) {
     const targets = target[shape]
-    for(let index in particles) {
+
+    for(let index in targets) {
         const particle = particles[index]
         const target = targets[index]
         
