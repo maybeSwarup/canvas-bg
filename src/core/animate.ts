@@ -4,6 +4,7 @@ import { fpsGraph } from './gui'
 import { controls } from './orbit-control'
 import camera from './camera'
 import {renderer, scene} from './renderer'
+import TWEEN from '@tweenjs/tween.js'
 
 const clock = new THREE.Clock()
 
@@ -16,6 +17,7 @@ const loop = () => {
 
   controls.update()
   renderer.render(scene, camera)
+  TWEEN.update()
 
   fpsGraph.end()
   requestAnimationFrame(loop)

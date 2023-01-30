@@ -1,5 +1,5 @@
-import { numberOfParticles } from "../utils/constants";
-import Pyramid from "./shapes/pyramid";
+import { numberOfParticles } from "../../utils/constants";
+import Pyramid from "../shapes/pyramid";
 
 const particles: Array<Pyramid> = []
 
