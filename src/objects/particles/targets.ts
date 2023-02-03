@@ -20,8 +20,8 @@ particles.forEach((partticle, i) => {
     const phi  = Math.acos( -1 + (2 * i) / l)
     const theta = Math.sqrt( l * Math.PI) * phi
     sphere.position.setFromSphericalCoords(radius, phi, theta)
-    vector.copy(sphere.position).multiplyScalar(2)
-    sphere.lookAt(vector)
+    // vector.copy(sphere.position).multiplyScalar(2)
+    // sphere.lookAt(vector)
     target.sphere.push(sphere)
     
     // grid
