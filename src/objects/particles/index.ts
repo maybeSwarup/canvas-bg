@@ -1,6 +1,7 @@
-import { numberOfParticles } from "../../utils/constants";
+import { numberOfParticles, selectedTransformation } from "../../utils/constants";
 import Pyramid from "../shapes/pyramid";
 import Wireframe from "../wireframe";
+import target from "./targets";
 
 const particles: Array<Pyramid> = []
 

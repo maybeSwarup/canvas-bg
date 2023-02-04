@@ -11,9 +11,9 @@ import target from './targets'
 export default function transform (shape: string, particles: any[], duration: number | undefined) {
     const targets = target[shape]
 
-    for(let index in targets) {
-        const particle = particles[index]
-        const target = targets[index]
+    for(let i in targets) {
+        const particle = particles[i]
+        const target = targets[i]
         
         const tween = new TWEEN.Tween(particle.position)
         .to({
